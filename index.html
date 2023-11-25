@@ -101,7 +101,61 @@
     </header>
 
     <!-- MAIN -->
-    <main></main>
+    <main class="mt-20">
+      <!-- HERO SECTION -->
+      <section
+        class="h-[calc(100vh-5rem)] bg-no-repeat bg-center bg-cover relative"
+        style="background-image: url(./assets/images/hero.jpg)"
+      >
+        <!-- OVERLAY -->
+        <div
+          class="absolute top-0 right-0 bottom-0 w-full h-full bg-gradient-to-t from-black/75 to-transparent z-[1]"
+        ></div>
+
+        <!-- CONTENTS -->
+        <div
+          class="relative z-[2] w-full h-full container py-20 flex flex-col items-center text-center justify-center gap-5"
+        >
+          <!-- px-56 was taken for unresponsive paragraph container -->
+          <h1 class="text-7xl text-white font-semibold max-w-5xl">
+            Unveiling Radiance in Our Exclusive 'For Her' Oasis
+          </h1>
+          <p class="text-gray max-w-6xl">
+            Step into a world crafted exclusively for her at Ethereal Beauty
+            Parlor and Spa. Indulge in a symphony of tailored treatments, from
+            rejuvenating facials to precision hair styling, all delivered with a
+            touch of sophistication and care.
+          </p>
+          <a
+            href="#appointment"
+            class="bg-violet text-white px-5 py-3 rounded-full font-medium hover:bg-cream transition duration-300 ease-in-out"
+            >Make an Appointment</a
+          >
+
+          <!-- SCROLL DOWN BUTTON -->
+          <a href="#services" class="absolute left-1/2 -translate-x-1/2 bottom-10 flex flex-col gap-2.5 items-center text-gray">
+            <span>Scroll down</span>
+            <span class="animate-bounce">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-mouse"
+              >
+                <rect x="5" y="2" width="14" height="20" rx="7" />
+                <path d="M12 6v4" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </section>
+    </main>
 
     <!-- FOOTER -->
     <footer></footer>
