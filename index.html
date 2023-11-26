@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -60,7 +60,7 @@
         >
 
         <!-- NAV LINKS -->
-        <ul class="flex gap-5 items-center">
+        <ul class="gap-5 items-center hidden sm:flex">
           <li>
             <a
               href="#"
@@ -117,7 +117,8 @@
           class="relative z-[2] w-full h-full container py-20 flex flex-col items-center text-center justify-center gap-5"
         >
           <!-- px-56 was taken for unresponsive paragraph container -->
-          <h1 class="text-7xl text-white font-semibold max-w-5xl">
+          <h1 class="text-3xl sm:text-4xl
+          md:text-5xl lg:text-6xl xl:text-7xl text-white font-semibold max-w-5xl">
             Unveiling Radiance in Our Exclusive 'For Her' Oasis
           </h1>
           <p class="text-gray max-w-6xl">
@@ -174,7 +175,7 @@
         </div>
 
         <!-- SERVICES WRAPPER -->
-        <div class="container grid grid-cols-3 px-32 gap-10 pb-20">
+        <div class="container grid grid-cols-1 sm:grid-cols-3 px-32 gap-10 pb-20">
           <!-- px-32 is used in exchange of container -->
 
           <!-- SERVICE 1 -->
@@ -313,7 +314,7 @@
           </div>
 
           <!-- POPULAR SERVICES WRAPPER -->
-          <div class="container grid grid-cols-4 gap-10 px-36">
+          <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 px-36">
             <!-- px-36 is for container -->
 
             <!-- POPULAR SERVICE 1 -->
@@ -712,9 +713,50 @@
           </div>
         </div>
       </section>
+
+      <!-- NEWSLETTER -->
+      <section class="py-20 bg-stone-100">
+        <!-- SECTION TITLE -->
+        <div
+          class="container text-center flex flex-col items-center gap-1.5 mb-10"
+        >
+          <span class="uppercase text-gray font-semibold tracking-widest"
+            >Newsletter</span
+          >
+          <h3 class="text-4xl font-medium max-w-lg">Want to get updates?</h3>
+        </div>
+
+        <form class="container max-w-2xl text-center flex flex-col gap-5">
+          <p>
+            We appreciate your trust greatly! Our clients choose us and our
+            products because they know we're the best.
+          </p>
+
+          <div
+            class="flex flex-col sm:flex-row gap-5 items-center text-black/60"
+          >
+            <input
+              type="email"
+              placeholder="Enter Your Email Address"
+              class="w-full px-4 py-3 bg-transparent border-2 border-dashed border-cream rounded-xl outline-none"
+            />
+            <button
+              type="submit"
+              class="bg-violet rounded-xl px-5 py-4 uppercase text-white font-semibold tracking-widest hover:bg-cream transition duration-300 ease-in-out w-full"
+            >
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </section>
     </main>
 
     <!-- FOOTER -->
-    <footer></footer>
+    <footer class="py-10">
+      <p class="container text-cream text-lg text-center sm:text-left">
+        &copy; 2023, <span class="underline">Ethereal Spa</span>. All rights
+        reserved.
+      </p>
+    </footer>
   </body>
 </html>
